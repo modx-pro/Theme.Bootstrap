@@ -1,0 +1,16 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+#content {
+	min-height: 300px;
+}
+
+footer {
+	border-top: 1px solid #efefef;
+	margin-top: 100px;
+	padding-top: 5px;
+}
+
+div.pagination {text-align:center;}

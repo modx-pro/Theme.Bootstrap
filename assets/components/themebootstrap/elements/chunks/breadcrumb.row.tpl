@@ -1,0 +1,1 @@
+<li><a href="[[+link]]">[[+pagetitle]]</a> <span class="divider">/</span></li>
