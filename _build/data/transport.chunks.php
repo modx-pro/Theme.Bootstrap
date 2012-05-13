@@ -97,4 +97,12 @@ $chunks[10]->fromArray(array(
     'snippet' => file_get_contents($sources['source_assets'].'/elements/chunks/getresources.row.tpl'),
 ),'',true,true);
 
+$chunks[11]= $modx->newObject('modChunk');
+$chunks[11]->fromArray(array(
+    'id' => 0,
+    'name' => 'tpl.Wayfinder.row.inner',
+    'description' => '',
+    'snippet' => file_get_contents($sources['source_assets'].'/elements/chunks/wayfinder.row.inner.tpl'),
+),'',true,true);
+
 return $chunks;
