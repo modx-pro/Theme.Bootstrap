@@ -1,5 +1,10 @@
 Changelog for Theme.Bootstrap
 
+1.0.2 (25.06.2012)
+==============
+- Updated version of Bootstrap to 2.4
+- Added responsive feature
+
 1.0.1 (13.05.2012)
 ==============
 - Fixed dropdown menu
