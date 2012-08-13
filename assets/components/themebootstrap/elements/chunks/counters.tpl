@@ -1,2 +1,2 @@
-<!-- Javascript code for counting page hits -->
-<!-- For example - Google analitics -->
+<!-- JavaScript code for counting page hits -->
+<!-- For example: Google Analytics -->

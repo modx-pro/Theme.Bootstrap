@@ -1,5 +1,5 @@
-[[Breadcrumb?
-  &containerTpl=`tpl.Breadcrumb.container`
-  &linkCrumbTpl=`tpl.Breadcrumb.row`
-  &showHomeCrumb=`1`
+[[BreadCrumb?
+&containerTpl=`tpl.Breadcrumb.container`
+&linkCrumbTpl=`tpl.Breadcrumb.row`
+&showHomeCrumb=`1`
 ]]
