@@ -1,4 +1,4 @@
 <ul class="breadcrumb">
-  <li>&nbsp;</li>
-  [[+crumbs]]
+	<li>&nbsp;</li>
+	[[+crumbs]]
 </ul>

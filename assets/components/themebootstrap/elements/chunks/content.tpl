@@ -1,4 +1,4 @@
 <div id="content" class="main">
-	[[*id:gt=`1`:then=`<h1>[[*pagetitle]]</h1>`]]
-	<p>[[*content]]</p>
+	[[*id:isnot=`[[++site_start]]`:then=`<h1>[[*longtitle:default=`[[*pagetitle]]`]]</h1>`]]
+	[[*content]]
 </div>

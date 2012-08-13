@@ -1,8 +1,15 @@
 Changelog for Theme.Bootstrap
 
+1.0.3 (13.08.2012)
+==============
+- [#3] Improved portability + various fixes
+- [#4] Added "img" directory with glyphicons
+- Jquery version changed to 1.8.0
+
+
 1.0.2 (25.06.2012)
 ==============
-- Updated version of Bootstrap to 2.4
+- Updated version of Bootstrap to 2.0.4
 - Added responsive feature
 
 1.0.1 (13.05.2012)
