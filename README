@@ -6,4 +6,5 @@ instead of default bootstrap template:
 <link href="[[++assets_url]]components/themebootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 use cerulean template:
+
 <link href="[[++assets_url]]components/themebootstrap/css/cerulean/bootstrap.min.css" rel="stylesheet">
