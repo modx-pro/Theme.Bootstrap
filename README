@@ -3,7 +3,7 @@ A basic theme for MODx Revolution based on Twitter Bootstrap (http://twitter.git
 You can change your default template: just add the name of the folder where others template are, for example: 
 instead of default bootstrap template:
 
-<code><link href="[[++assets_url]]components/themebootstrap/css/bootstrap.min.css" rel="stylesheet"></code>
+<link href="[[++assets_url]]components/themebootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 use cerulean template:
 
