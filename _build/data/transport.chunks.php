@@ -105,4 +105,20 @@ $chunks[11]->fromArray(array(
     'snippet' => file_get_contents($sources['source_assets'].'/elements/chunks/wayfinder.row.inner.tpl'),
 ),'',true,true);
 
+$chunks[12]= $modx->newObject('modChunk');
+$chunks[12]->fromArray(array(
+    'id' => 0,
+    'name' => 'tpl.Wayfinder.outer',
+    'description' => '',
+    'snippet' => file_get_contents($sources['source_assets'].'/elements/chunks/wayfinder.outer.tpl'),
+),'',true,true);
+
+$chunks[13]= $modx->newObject('modChunk');
+$chunks[13]->fromArray(array(
+    'id' => 0,
+    'name' => 'tpl.Wayfinder.row.parent',
+    'description' => '',
+    'snippet' => file_get_contents($sources['source_assets'].'/elements/chunks/wayfinder.row.parent.tpl'),
+),'',true,true);
+
 return $chunks;

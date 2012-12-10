@@ -5,7 +5,7 @@
 			<p><small>render time: [^t^]</small></p>
 		</div>
 		<div class="span6">
-			<a href="http://bezumkin.ru" class="pull-right">Василий Наумкин</a>
+			<a href="http://bezumkin.ru" class="pull-right">[[++cultureKey:is=`ru`:then=`Василий Наумкин`:else=`Vasiliy Naumkin`]]</a>
 		</div>
 	</div>
 </footer>

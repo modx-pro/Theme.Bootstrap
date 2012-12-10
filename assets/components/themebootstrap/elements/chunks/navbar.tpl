@@ -8,14 +8,16 @@
 			</a>
 			<a class="brand" href="/">[[++site_name]]</a>
 			<div class="nav-collapse">
-				[[Wayfinder?
-					&outerClass=`nav`
-					&innerClass=`dropdown-menu`
-					&rowTpl=`tpl.Wayfinder.row`
-					&innerRowTpl=`tpl.Wayfinder.row.inner`
-					&startId=`0`
-					&level=`2`
-				]]
+				<ul class="nav">
+					[[Wayfinder?
+						&startId=`0`
+						&level=`2`
+						&outerTpl=`tpl.Wayfinder.outer`
+						&parentRowTpl=`tpl.Wayfinder.row.parent`
+						&innerRowTpl=`tpl.Wayfinder.row.inner`
+						&rowTpl=`tpl.Wayfinder.row`                    
+					]]
+				</ul>
 			</div>
 		</div>
 	</div>

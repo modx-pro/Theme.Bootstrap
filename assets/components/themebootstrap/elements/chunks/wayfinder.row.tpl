@@ -1,4 +1,4 @@
-<li class="[[+wf.classnames]][[+wf.isfolder:is=`1`:then=` dropdown`]]">
-	<a href="[[+wf.isfolder:is=`1`:then=`#`:else=`[[+wf.link]]`]]" title="[[+wf.title]]" [[+wf.isfolder:is=`1`:then=`class="dropdown-toggle" data-toggle="dropdown"`]] [[+wf.attributes]]>[[+wf.linktext]] [[+wf.isfolder:is=`1`:then=`<b class="caret"></b>`]]</a>
+<li [[+wf.classes]]>
+	<a href="[[+wf.link]]" [[+wf.attributes]]>[[+wf.linktext]]</a>
 	[[+wf.wrapper]]
 </li>
