@@ -6,7 +6,7 @@
 	<body>
 		[[$Navbar]]
 		<div class="container">
-			[[*id:isnot=`[[++site_start]]`:then=`[[$Breadcrumb]]`]]
+			[[[[*id:isnot=`[[++site_start]]`:then=`$Breadcrumb`:else=`--`]]]]
 			[[$Content]]
 			[[$Footer]]
 		</div>
