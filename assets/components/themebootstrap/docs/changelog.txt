@@ -1,5 +1,11 @@
 Changelog for Theme.Bootstrap
 
+1.3.0 (16.02.2013)
+=============
+- Updated Bootstrap, version 2.3.0
+- Updated 12 Bootswatch themes
+- Small optimization to template
+
 1.2.1 (10.12.2012)
 =============
 - Updated Bootstrap, version 2.2.2
