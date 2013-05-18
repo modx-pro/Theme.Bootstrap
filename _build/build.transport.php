@@ -14,7 +14,7 @@ set_time_limit(0);
 /* define package */
 define('PKG_NAME','Theme.Bootstrap');
 define('PKG_NAME_LOWER','themebootstrap');
-define('PKG_VERSION','1.3.0');
+define('PKG_VERSION','1.3.1');
 define('PKG_RELEASE','pl');
 
 /* define sources */
