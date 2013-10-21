@@ -4,7 +4,7 @@
 define('PKG_NAME','Theme.Bootstrap');
 define('PKG_NAME_LOWER','themebootstrap');
 
-define('PKG_VERSION','1.3.1');
+define('PKG_VERSION','1.4.0');
 define('PKG_RELEASE','pl');
 define('PKG_AUTO_INSTALL', true);
 
@@ -28,3 +28,10 @@ define('MODX_CORE_URL', MODX_BASE_URL . 'core/');
 define('MODX_MANAGER_URL', MODX_BASE_URL . 'manager/');
 define('MODX_CONNECTORS_URL', MODX_BASE_URL . 'connectors/');
 define('MODX_ASSETS_URL', MODX_BASE_URL . 'assets/');
+
+/* define build options */
+define('BUILD_CHUNK_UPDATE', false);
+define('BUILD_TEMPLATE_UPDATE', false);
+
+define('BUILD_CHUNK_STATIC', false);
+define('BUILD_TEMPLATE_STATIC', false);

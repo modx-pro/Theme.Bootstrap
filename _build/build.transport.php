@@ -35,6 +35,7 @@ $modx->initialize('mgr');
 echo '<pre>'; /* used for nice formatting of log messages */
 $modx->setLogLevel(modX::LOG_LEVEL_INFO);
 $modx->setLogTarget('ECHO');
+$modx->getService('error','error.modError');
 
 $modx->loadClass('transport.modPackageBuilder','',false, true);
 $builder = new modPackageBuilder($modx);
@@ -43,66 +44,50 @@ $builder->registerNamespace(PKG_NAME_LOWER,false,true,'{core_path}components/'.P
 $modx->log(modX::LOG_LEVEL_INFO,'Created Transport Package and Namespace.');
 
 /* create category */
+$modx->log(xPDO::LOG_LEVEL_INFO,'Created category.');
+/* @var modCategory $category */
 $category= $modx->newObject('modCategory');
 $category->set('id',1);
 $category->set('category',PKG_NAME);
-
-/* add templates */
-$templates = include $sources['data'].'transport.templates.php';
-if (!is_array($templates)) {
-	$modx->log(modX::LOG_LEVEL_ERROR,'Could not package in templates.');
-} else {
-	$category->addMany($templates);
-	$modx->log(modX::LOG_LEVEL_INFO,'Packaged in '.count($templates).' templates.');
-}
-
-/* add chunks */
-$chunks = include $sources['data'].'transport.chunks.php';
-if (!is_array($chunks)) {
-	$modx->log(modX::LOG_LEVEL_ERROR,'Could not package in chunks.');
-} else {
-	$category->addMany($chunks);
-	$modx->log(modX::LOG_LEVEL_INFO,'Packaged in '.count($chunks).' chunks.');
-}
-
-
 /* create category vehicle */
 $attr = array(
 	xPDOTransport::UNIQUE_KEY => 'category',
 	xPDOTransport::PRESERVE_KEYS => false,
 	xPDOTransport::UPDATE_OBJECT => true,
 	xPDOTransport::RELATED_OBJECTS => true,
-	xPDOTransport::RELATED_OBJECT_ATTRIBUTES => array (
-		'Children' => array(
-			xPDOTransport::PRESERVE_KEYS => false,
-			xPDOTransport::UPDATE_OBJECT => true,
-			xPDOTransport::UNIQUE_KEY => 'category',
-			xPDOTransport::RELATED_OBJECTS => true,
-			xPDOTransport::RELATED_OBJECT_ATTRIBUTES => array (
-				'Templates' => array(
-					xPDOTransport::PRESERVE_KEYS => false,
-					xPDOTransport::UPDATE_OBJECT => false,
-					xPDOTransport::UNIQUE_KEY => 'templatename',
-				),
-				'Chunks' => array(
-					xPDOTransport::PRESERVE_KEYS => false,
-					xPDOTransport::UPDATE_OBJECT => false,
-					xPDOTransport::UNIQUE_KEY => 'name',
-				),
-			),
-		),
-		'Templates' => array(
-			xPDOTransport::PRESERVE_KEYS => false,
-			xPDOTransport::UPDATE_OBJECT => false,
-			xPDOTransport::UNIQUE_KEY => 'templatename',
-		),
-		'Chunks' => array (
-			xPDOTransport::PRESERVE_KEYS => false,
-			xPDOTransport::UPDATE_OBJECT => false,
-			xPDOTransport::UNIQUE_KEY => 'name',
-		),
-	),
 );
+
+/* add templates */
+if (defined('BUILD_TEMPLATE_UPDATE')) {
+	$attr[xPDOTransport::RELATED_OBJECT_ATTRIBUTES]['Templates'] = array (
+		xPDOTransport::PRESERVE_KEYS => false,
+		xPDOTransport::UPDATE_OBJECT => BUILD_TEMPLATE_UPDATE,
+		xPDOTransport::UNIQUE_KEY => 'templatename',
+	);
+	$templates = include $sources['data'].'transport.templates.php';
+	if (!is_array($templates)) {
+		$modx->log(modX::LOG_LEVEL_ERROR,'Could not package in templates.');
+	} else {
+		$category->addMany($templates);
+		$modx->log(modX::LOG_LEVEL_INFO,'Packaged in '.count($templates).' templates.');
+	}
+}
+/* add chunks */
+if (defined('BUILD_CHUNK_UPDATE')) {
+	$attr[xPDOTransport::RELATED_OBJECT_ATTRIBUTES]['Chunks'] = array (
+		xPDOTransport::PRESERVE_KEYS => false,
+		xPDOTransport::UPDATE_OBJECT => BUILD_CHUNK_UPDATE,
+		xPDOTransport::UNIQUE_KEY => 'name',
+	);
+	$chunks = include $sources['data'].'transport.chunks.php';
+	if (!is_array($chunks)) {
+		$modx->log(modX::LOG_LEVEL_ERROR,'Could not package in chunks.');
+	} else {
+		$category->addMany($chunks);
+		$modx->log(modX::LOG_LEVEL_INFO,'Packaged in '.count($chunks).' chunks.');
+	}
+}
+
 $vehicle = $builder->createVehicle($category,$attr);
 
 $modx->log(modX::LOG_LEVEL_INFO,'Adding file resolvers to category...');
@@ -110,16 +95,16 @@ $vehicle->resolve('file',array(
 	'source' => $sources['source_assets'],
 	'target' => "return MODX_ASSETS_PATH . 'components/';",
 ));
+
 $builder->putVehicle($vehicle);
 
-/* now pack in the license file, readme and setup options */
 $builder->setPackageAttributes(array(
 	'changelog' => file_get_contents($sources['docs'] . 'changelog.txt'),
 	'license' => file_get_contents($sources['docs'] . 'license.txt'),
 	'readme' => file_get_contents($sources['docs'] . 'readme.txt'),
-	//'setup-options' => array(
-		//'source' => $sources['build'].'setup.options.php',
-	//),
+	'setup-options' => array(
+		'source' => $sources['build'].'setup.options.php',
+	),
 ));
 $modx->log(modX::LOG_LEVEL_INFO,'Added package attributes and setup options.');
 
@@ -166,7 +151,10 @@ if (defined('PKG_AUTO_INSTALL') && PKG_AUTO_INSTALL) {
 		}
 		$package->save();
 	}
-	$package->install();
+
+	if ($package->install()) {
+		$modx->runProcessor('system/clearcache');
+	}
 }
 
 $modx->log(modX::LOG_LEVEL_INFO,"\n<br />Execution time: {$totalTime}\n");
