@@ -1,5 +1,12 @@
 Changelog for Theme.Bootstrap
 
+2.0.0 (21.11.2013)
+=============
+- Bootstrap 3.0.2
+- jQuery 1.10.2
+- 11 themes from bootswatch.com
+- 2 demo pages with documents listing and bootstrap elements
+
 1.4.0 (21.10.2013)
 =============
 - Added integration with pdoTools.

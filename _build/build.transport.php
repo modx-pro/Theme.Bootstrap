@@ -19,6 +19,7 @@ $sources = array(
 	'root' => $root,
 	'build' => $root . '_build/',
 	'data' => $root . '_build/data/',
+	'resolvers' => $root . '_build/resolvers/',
 	'chunks' => $root.'assets/components/'.PKG_NAME_LOWER.'/elements/chunks/',
 	'templates' => $root.'assets/components/'.PKG_NAME_LOWER.'/elements/templates/',
 	'docs' => $root.'assets/components/'.PKG_NAME_LOWER.'/docs/',
@@ -95,6 +96,15 @@ $vehicle->resolve('file',array(
 	'source' => $sources['source_assets'],
 	'target' => "return MODX_ASSETS_PATH . 'components/';",
 ));
+
+foreach ($BUILD_RESOLVERS as $resolver) {
+	if ($vehicle->resolve('php', array('source' => $sources['resolvers'] . 'resolve.'.$resolver.'.php'))) {
+		$modx->log(modX::LOG_LEVEL_INFO,'Added resolver "'.$resolver.'" to category.');
+	}
+	else {
+		$modx->log(modX::LOG_LEVEL_INFO,'Could not add resolver "'.$resolver.'" to category.');
+	}
+}
 
 $builder->putVehicle($vehicle);
 

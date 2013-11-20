@@ -4,7 +4,7 @@ Theme.Bootstrap
 Author: Vasiliy Naumkin <bezumkin@yandex.ru>
 --------------------
 
-A basic theme for MODx Revolution based on Twitter Bootstrap (http://twitter.github.com/bootstrap/) + Bootswatch collection of 11 extra bootstrap templates (http://bootswatch.com).
+A basic theme for MODx Revolution based on Twitter Bootstrap (http://getbootstrap.com/) + Bootswatch collection of 11 extra bootstrap templates (http://bootswatch.com).
 
 You can change your default template: just add the name of the folder where others template are, for example: 
 instead of default bootstrap template:

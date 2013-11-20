@@ -27,10 +27,6 @@ $tmp = array(
 		'file' => 'crumbs',
 		'description' => 'Breadcrumbs navigation',
 	),
-	'tpl.pdoResources.row' => array(
-		'file' => 'pdoresources.row',
-		'description' => 'One row of list of the resources',
-	),
 
 );
 

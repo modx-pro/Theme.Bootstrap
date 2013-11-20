@@ -1,25 +1,28 @@
-<div class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
-			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<!-- Static navbar -->
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
-			</a>
-			<a class="brand" href="/">[[++site_name]]</a>
-			<div class="nav-collapse">
+			</button>
+			<a class="navbar-brand" href="#">[[++site_name]]</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
 				[[pdoMenu?
 					&startId=`0`
 					&level=`2`
-					&outerClass=`nav`
 					&tplParentRow=`@INLINE
-						<li class="[[+classnames]] dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" [[+attributes]]>[[+menutitle]]<b class="caret"></b></a>
-							<ul class="dropdown-menu">[[+wrapper]]</ul>
-						</li>`
-					&tplInner=`@INLINE [[+wrapper]]`
+					<li class="[[+classnames]] dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" [[+attributes]]>[[+menutitle]]<b class="caret"></b></a>
+						<ul class="dropdown-menu">[[+wrapper]]</ul>
+					</li>`
+					&tplOuter=`@INLINE [[+wrapper]]`
 				]]
-			</div>
-		</div>
+			</ul>
+		</div><!--/.nav-collapse -->
 	</div>
 </div>

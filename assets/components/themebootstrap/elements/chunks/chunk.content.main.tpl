@@ -3,7 +3,9 @@
 [[!pdoPage?
 	&element=`pdoResources`
 	&parents=`0`
-	&tpl=`tpl.pdoResources.row`
+	&useWeblinkUrl=`1`
+	&tpl=`@INLINE <p>[[+idx]]. <a href="[[+link]]">[[+pagetitle]]</a></p>`
+	&tplPageWrapper=`@INLINE <ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul>`
 ]]
 
 [[!+page.nav]]
