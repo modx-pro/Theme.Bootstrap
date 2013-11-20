@@ -30,11 +30,11 @@ define('MODX_CONNECTORS_URL', MODX_BASE_URL . 'connectors/');
 define('MODX_ASSETS_URL', MODX_BASE_URL . 'assets/');
 
 /* define build options */
-define('BUILD_CHUNK_UPDATE', true);
-define('BUILD_TEMPLATE_UPDATE', true);
+define('BUILD_CHUNK_UPDATE', false);
+define('BUILD_TEMPLATE_UPDATE', false);
 
-define('BUILD_CHUNK_STATIC', true);
-define('BUILD_TEMPLATE_STATIC', true);
+define('BUILD_CHUNK_STATIC', false);
+define('BUILD_TEMPLATE_STATIC', false);
 
 $BUILD_RESOLVERS= array(
 	'demo',
