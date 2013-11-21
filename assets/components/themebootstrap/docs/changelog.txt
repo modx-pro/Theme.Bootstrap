@@ -1,5 +1,9 @@
 Changelog for Theme.Bootstrap
 
+2.0.1 (22.11.2013)
+=============
+- Scripts and styles are loaded with MinifyX.
+
 2.0.0 (21.11.2013)
 =============
 - Bootstrap 3.0.2

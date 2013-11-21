@@ -1,5 +1,7 @@
 <h3>[[++site_name]]</h3>
 
+[[*content]]
+
 [[!pdoPage?
 	&element=`pdoResources`
 	&parents=`0`

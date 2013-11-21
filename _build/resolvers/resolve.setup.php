@@ -11,6 +11,10 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
 			'pdoTools' => array(
 				'version_major' => 1,
 				'version_minor:>=' =>  8,
+			),
+			'MinifyX' => array(
+				'version_major' => 1,
+				'version_minor:>=' =>  2,
 			)
 		);
 

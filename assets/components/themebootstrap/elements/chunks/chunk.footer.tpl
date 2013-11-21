@@ -8,8 +8,8 @@
 			</small></p>
 		</div>
 		<div class="col-lg-4">
-			<p class="">&copy;2012 [[++site_name]]</p>
-			<a href="http://bezumkin.ru">[[++cultureKey:is=`ru`:then=`Василий Наумкин`:else=`Vasiliy Naumkin`]]</a>
+			<p class="">&copy;2013 [[++site_name]]</p>
+			<a href="http://bezumkin.ru/">[[++cultureKey:is=`ru`:then=`Василий Наумкин`:else=`Vasiliy Naumkin`]]</a>
 		</div>
 	</div>
 </footer>
