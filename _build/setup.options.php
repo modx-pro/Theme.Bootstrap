@@ -8,7 +8,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
 	case xPDOTransport::ACTION_INSTALL:
 
 	case xPDOTransport::ACTION_UPGRADE:
-		$exists = $modx->getCount('transport.modTransportPackage', array('package_nameL:IN' => array('pdoTools', 'MinifyX')));
+		$exists = $modx->getCount('transport.modTransportPackage', array('package_name:IN' => array('pdoTools', 'MinifyX')));
 		break;
 
 	case xPDOTransport::ACTION_UNINSTALL: break;
