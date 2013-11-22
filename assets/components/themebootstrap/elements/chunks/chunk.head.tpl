@@ -21,6 +21,7 @@ For example: [[++assets_url]]components/themebootstrap/css/cerulean/bootstrap-th
 		[[++assets_url]]components/themebootstrap/js/jquery.min.js,
 		[[++assets_url]]components/themebootstrap/js/bootstrap.min.js
 	`
+	&cacheFolder=`[[++assets_url]]components/themebootstrap/min`
 ]]
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
