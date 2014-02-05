@@ -112,6 +112,7 @@ $builder->setPackageAttributes(array(
 	'changelog' => file_get_contents($sources['docs'] . 'changelog.txt'),
 	'license' => file_get_contents($sources['docs'] . 'license.txt'),
 	'readme' => file_get_contents($sources['docs'] . 'readme.txt'),
+	'chunks' => $BUILD_CHUNKS,
 	'setup-options' => array(
 		'source' => $sources['build'].'setup.options.php',
 	),

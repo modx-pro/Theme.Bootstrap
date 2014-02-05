@@ -44,6 +44,8 @@ foreach ($tmp as $k => $v) {
 	),'',true,true);
 
 	$chunks[] = $chunk;
+
+	$BUILD_CHUNKS[$k] = file_get_contents($sources['source_assets'].'/elements/chunks/chunk.'.$v['file'].'.tpl');
 }
 
 unset($tmp);
