@@ -6,6 +6,7 @@ Changelog for Theme.Bootstrap
 - jQuery 1.11.0
 - Bootstrap 3.1.0
 - Added ability to overwrite chunks on package upgrade.
+- Updated Bootswatch themes.
 
 2.0.2 (23.11.2013)
 =============
