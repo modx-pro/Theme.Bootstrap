@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-	<head>[[$Head]]</head>
+	<head>
+		[[$Head]]
+	</head>
 	<body>
 		[[$Navbar]]
 		<div class="container">

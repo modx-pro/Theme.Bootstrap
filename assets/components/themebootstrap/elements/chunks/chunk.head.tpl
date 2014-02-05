@@ -8,7 +8,7 @@
 
 <!-- You can add theme from bootswatch.com: just add it into &cssSources=``.
 For example: [[++assets_url]]components/themebootstrap/css/cerulean/bootstrap-theme.min.css-->
-[[!MinifyX?
+[[MinifyX?
 	&minifyCss=`1`
 	&registerCss=`1`
 	&cssSources=`
@@ -18,11 +18,11 @@ For example: [[++assets_url]]components/themebootstrap/css/cerulean/bootstrap-th
 	&minifyJs=`1`
 	&registerJs=`1`
 	&jsSources=`
-		[[++assets_url]]components/themebootstrap/js/jquery.min.js,
 		[[++assets_url]]components/themebootstrap/js/bootstrap.min.js
 	`
-	&cacheFolder=`[[++assets_url]]components/themebootstrap/min`
 ]]
+
+<script src="[[++assets_url]]components/themebootstrap/js/jquery.min.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>

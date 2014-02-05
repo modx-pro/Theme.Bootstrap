@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<head>[[$Head]]</head>
+	<head>
+		[[$Head]]
+	</head>
 	<body>
 		[[$Navbar]]
 		<div class="container">

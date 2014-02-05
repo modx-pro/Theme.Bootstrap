@@ -1,5 +1,11 @@
 Changelog for Theme.Bootstrap
 
+2.0.3 (23.11.2013)
+=============
+- Improved jQuery registration.
+- jQuery 1.11.0
+- Bootstrap 3.1.0
+
 2.0.2 (23.11.2013)
 =============
 - Fixed fonts load.
