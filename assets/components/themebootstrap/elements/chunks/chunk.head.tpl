@@ -4,10 +4,10 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <base href="[[++site_url]]" />
-<title>[[*longtitle:default=`[[*pagetitle]]`]] - [[++site_name]]</title>
+<title>[[!pdoTitle]] / [[++site_name]]</title>
 
 <!-- You can add theme from bootswatch.com: just add it into &cssSources=``.
-For example: [[++assets_url]]components/themebootstrap/css/cerulean/bootstrap-theme.min.css-->
+For example: [[++assets_url]]components/themebootstrap/css/slate/bootstrap.min.css-->
 [[MinifyX?
 	&minifyCss=`1`
 	&registerCss=`1`
