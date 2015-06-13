@@ -1,5 +1,9 @@
 Changelog for Theme.Bootstrap
 
+2.2.1 (13.06.2015)
+=============
+- Updated pdoTools version in the installer.
+
 2.2.0 (30.03.2015)
 =============
 - Added pdoTitle
