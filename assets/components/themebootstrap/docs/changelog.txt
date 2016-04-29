@@ -1,5 +1,15 @@
 Changelog for Theme.Bootstrap
 
+2.3.0 (02.05.2016)
+=============
+- Updated pdoTools version in the installer
+- Updated MinifyX version in the installer
+- jQuery 1.11.3
+- Bootstrap 3.3.6
+- Updated Bootswatch themes
+- Add Yeti Bootswatch theme
+
+
 2.2.1 (13.06.2015)
 =============
 - Updated pdoTools version in the installer.
