@@ -9,7 +9,6 @@ Changelog for Theme.Bootstrap
 - Updated Bootswatch themes
 - Add Yeti Bootswatch theme
 
-
 2.2.1 (13.06.2015)
 =============
 - Updated pdoTools version in the installer.
