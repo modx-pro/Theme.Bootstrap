@@ -5,7 +5,7 @@ define('PKG_NAME','Theme.Bootstrap');
 define('PKG_NAME_LOWER','themebootstrap');
 
 define('PKG_VERSION','2.3.0');
-define('PKG_RELEASE','pl1');
+define('PKG_RELEASE','pl');
 define('PKG_AUTO_INSTALL', true);
 
 /* define paths */
