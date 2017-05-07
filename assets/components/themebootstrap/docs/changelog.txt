@@ -1,5 +1,18 @@
 Changelog for Theme.Bootstrap
 
+2.4.1 (22.04.2017)
+=============
+- Updated pdoTools version in the installer
+- Add Solar Bootswatch themes
+
+2.4.0 (11.10.2016)
+=============
+- Updated pdoTools version in the installer
+- Updated MinifyX version in the installer
+- jQuery 1.12.4
+- Bootstrap 3.3.7
+- Updated Bootswatch themes
+
 2.3.0 (02.05.2016)
 =============
 - Updated pdoTools version in the installer

@@ -128,8 +128,8 @@ switch (@$options[xPDOTransport::PACKAGE_ACTION]) {
 		$modx = &$object->xpdo;
 		/* Checking and installing required packages */
 		$packages = array(
-			'pdoTools' => '2.4.0-pl',
-			'MinifyX' => '1.4.3-pl',
+			'pdoTools' => '2.8.4-pl1',
+			'MinifyX' => '1.4.4-pl',
 		);
 
 		foreach ($packages as $package_name => $version) {
