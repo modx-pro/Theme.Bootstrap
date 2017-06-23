@@ -1,5 +1,9 @@
 Changelog for Theme.Bootstrap
 
+2.4.2 (24.06.2017)
+=============
+- [#16] Fixed links to the fonts in CSS.
+
 2.4.1 (22.04.2017)
 =============
 - Updated pdoTools version in the installer
