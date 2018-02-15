@@ -1,28 +1,27 @@
-<!-- Static navbar -->
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="/">[[++site_name]]</a>
-		</div>
-		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				[[pdoMenu?
-					&startId=`0`
-					&level=`2`
-					&tplParentRow=`@INLINE
-					<li class="[[+classnames]] dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" [[+attributes]]>[[+menutitle]]<b class="caret"></b></a>
-						<ul class="dropdown-menu">[[+wrapper]]</ul>
-					</li>`
-					&tplOuter=`@INLINE [[+wrapper]]`
-				]]
-			</ul>
-		</div><!--/.nav-collapse -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="/">[[++site_name]]</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+
+			[[pdoMenu?
+			&startId=`0`
+			&level=`2`
+			&tplParentRow=`@INLINE
+			<li class="[[+classnames]] dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					[[+menutitle]]
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					[[+wrapper]]
+				</div>
+
+			</li>`
+			&tplOuter=`@INLINE [[+wrapper]]`
+			]]
+		</ul>
 	</div>
-</div>
+</nav>
