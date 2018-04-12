@@ -4,7 +4,7 @@
 define('PKG_NAME','Theme.Bootstrap');
 define('PKG_NAME_LOWER','themebootstrap');
 
-define('PKG_VERSION','2.3.0');
+define('PKG_VERSION','3.0.0');
 define('PKG_RELEASE','pl1');
 define('PKG_AUTO_INSTALL', true);
 
