@@ -33,8 +33,8 @@ For example: [[++assets_url]]components/themebootstrap/css/slate/bootstrap.min.c
 		[[++assets_url]]components/themebootstrap/css/bootstrap.css,
 		[[++assets_url]]components/themebootstrap/css/add.css
 	`
-	&minifyJs=`1`
-	&registerJs=`1`
+	&minifyJs=`0`
+	&registerJs=`0`
 	&jsSources=`
 		[[++assets_url]]components/themebootstrap/js/bootstrap.js
 	`
@@ -42,6 +42,6 @@ For example: [[++assets_url]]components/themebootstrap/css/slate/bootstrap.min.c
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="[[++assets_url]]components/themebootstrap/js/jquery-3.2.1.slim.min.js"></script>
+<script src="[[++assets_url]]components/themebootstrap/js/jquery-3.3.1.slim.min.js"></script>
 <script src="[[++assets_url]]components/themebootstrap/js/popper.min.js"></script>
-<script src="[[++assets_url]]components/themebootstrap/js/jquery.min.js"></script>
+<script src="[[++assets_url]]components/themebootstrap/js/bootstrap.min.js"></script>

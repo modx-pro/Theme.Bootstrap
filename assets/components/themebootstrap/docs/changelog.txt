@@ -1,4 +1,12 @@
 Changelog for Theme.Bootstrap
+3.0.0 (12.04.2018)
+=============
+- Bootstrap v4.1.0
+- jQuery v3.3.1
+- Updated pdoTools version in the installer
+- Updated Bootswatch themes
+- Add Litera, Materia, Minty, Lux, Pulse, Sketchy Bootswatch themes
+- Remove Bootswatch themes: Paper, Readable
 
 2.4.1 (22.04.2017)
 =============
