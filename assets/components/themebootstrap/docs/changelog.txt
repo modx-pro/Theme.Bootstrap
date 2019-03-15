@@ -1,5 +1,12 @@
 Changelog for Theme.Bootstrap
 
+3.0.0 (15.03.2019)
+=============
+- Updated Bootstrap to version 4.3.1
+- Removed Bootswatch themes.
+- Removed MinifyX.
+- Removed demo pages.
+
 2.4.2 (24.06.2017)
 =============
 - [#16] Fixed links to the fonts in CSS.

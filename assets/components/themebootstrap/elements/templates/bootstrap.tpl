@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		[[$Head]]
 	</head>
 	<body>
 		[[$Navbar]]
-		<div class="container">
+		<div class="container mt-3">
 			[[$Crumbs]]
-			<div id="content" class="inner">
-				[[$Content.inner]]
-			</div>
+			[[$Content]]
 			[[$Footer]]
 		</div>
 	</body>
