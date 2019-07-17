@@ -1,4 +1,4 @@
-<h3>[[+pagetitle]]</h3>
+<h3>[[*pagetitle]]</h3>
 
 <article>
 	[[*content]]
