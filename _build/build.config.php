@@ -3,7 +3,7 @@
 define('PKG_NAME', 'Theme.Bootstrap');
 define('PKG_NAME_LOWER', 'themebootstrap');
 
-define('PKG_VERSION', '3.0.0');
+define('PKG_VERSION', '3.1.0');
 define('PKG_RELEASE', 'pl');
 define('PKG_AUTO_INSTALL', true);
 

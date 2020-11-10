@@ -1,5 +1,10 @@
 Changelog for Theme.Bootstrap
 
+3.1.0 (10.11.2020)
+=============
+- Updated Bootstrap to version 4.5.3
+- Updated pdoTools version in the installer
+
 3.0.0 (15.03.2019)
 =============
 - Updated Bootstrap to version 4.3.1
