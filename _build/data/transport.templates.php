@@ -16,10 +16,10 @@ foreach ($tmp as $k => $v) {
         'id' => 0,
         'templatename' => $k,
         'description' => @$v['description'],
-        'content' => file_get_contents($sources['source_assets'] . '/elements/templates/' . $v['file'] . '.tpl'),
+        'content' => file_get_contents($sources['source_core'] . '/elements/templates/' . $v['file'] . '.tpl'),
         'static' => BUILD_TEMPLATE_STATIC,
         'source' => 1,
-        'static_file' => 'assets/components/' . PKG_NAME_LOWER . '/elements/templates/' . $v['file'] . '.tpl',
+        'static_file' => 'core/components/' . PKG_NAME_LOWER . '/elements/templates/' . $v['file'] . '.tpl',
     ], '', true, true);
     $templates[] = $template;
 }

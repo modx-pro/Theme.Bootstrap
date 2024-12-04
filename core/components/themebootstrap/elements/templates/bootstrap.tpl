@@ -8,7 +8,7 @@
 		<div class="container mt-3">
 			[[$Crumbs]]
 			[[$Content]]
-			[[$Footer]]
 		</div>
+		[[$Footer]]
 	</body>
 </html>

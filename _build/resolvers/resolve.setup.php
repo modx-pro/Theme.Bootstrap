@@ -8,7 +8,7 @@ if (!$transport->xpdo || !($transport instanceof xPDOTransport)) {
 $modx =& $transport->xpdo;
 $packages = [
     'pdoTools' => [
-        'version' => '2.12.7-pl',
+        'version' => '3.0.2-pl',
         'service_url' => 'modstore.pro',
     ],
 ];
