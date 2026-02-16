@@ -10,7 +10,18 @@ $mtime = explode(' ', $mtime);
 $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 
-require_once dirname(__FILE__,2) . '/core/config/config.inc.php';
+$configPath = null;
+for ($i = 2; $i <= 5; $i++) {
+    $path = dirname(__FILE__, $i) . '/core/config/config.inc.php';
+    if (file_exists($path)) {
+        $configPath = $path;
+        break;
+    }
+}
+if (!$configPath) {
+    die('MODx config.inc.php not found. Place Theme.Bootstrap inside MODx root (e.g. Extras/Theme.Bootstrap).');
+}
+require_once $configPath;
 require_once MODX_CORE_PATH . 'model/modx/modx.class.php';
 require_once dirname(__FILE__) . '/build.config.php';
 
