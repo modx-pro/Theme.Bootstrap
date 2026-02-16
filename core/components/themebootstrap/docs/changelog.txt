@@ -1,5 +1,11 @@
 Changelog for Theme.Bootstrap
 
+4.0.1 (16.02.2026)
+=============
+- Updated Bootstrap to version 5.3.8
+- Fixed dropdown: data-toggle -> data-bs-toggle in navbar
+- Removed deprecated shrink-to-fit from viewport meta
+
 4.0.0 (03.12.2024)
 =============
 - Updated Bootstrap to version 5.3.3

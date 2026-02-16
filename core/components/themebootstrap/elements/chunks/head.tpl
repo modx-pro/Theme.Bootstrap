@@ -1,5 +1,5 @@
 <meta charset="[[++modx_charset]]">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="[[*description]]">
 <base href="[[++site_url]]" />
 <title>[[!pdoTitle]] / [[++site_name]]</title>
