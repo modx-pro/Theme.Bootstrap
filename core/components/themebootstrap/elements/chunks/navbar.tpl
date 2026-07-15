@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-        <a class="navbar-brand" href="/">[[++site_name]]</a>
+        <a class="navbar-brand" href="[[~[[++site_start]]]]">[[++site_name]]</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -9,16 +9,10 @@
                 [[pdoMenu?
                     &startId=`0`
                     &level=`2`
-                    &tplOuter=`@INLINE [[+wrapper]]`
-                    &tpl=`@INLINE
-                    <li class="nav-item [[+classnames]]">
-                        <a class="nav-link" href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>
-                    </li>`
-                    &tplParentRow=`@INLINE
-                    <li class="nav-item dropdown [[+classnames]]">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" [[+attributes]]>[[+menutitle]]</a>
-                        <ul class="dropdown-menu">[[+wrapper]]</ul>
-                    </li>`
+                    &tplOuter=`Menu.Outer`
+                    &tpl=`Menu.Item`
+                    &tplParentRow=`Menu.Parent`
+                    &tplInnerRow=`Menu.Inner`
                 ]]
             </ul>
         </div>

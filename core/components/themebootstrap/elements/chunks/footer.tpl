@@ -15,5 +15,4 @@
         </div>
     </div>
 </footer>
-<script src="[[++assets_url]]components/themebootstrap/js/bootstrap.bundle.min.js"></script>
-[[++themebootstrap_use_jquery:is=`1`:then=`<script src="[[++assets_url]]components/themebootstrap/js/jquery-3.7.1.min.js"></script>`]]
+[[$Scripts]]
