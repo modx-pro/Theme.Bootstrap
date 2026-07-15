@@ -8,4 +8,4 @@
  */
 
 $_lang['setting_themebootstrap_use_jquery'] = 'Использовать jQuery';
-$_lang['setting_themebootstrap_use_jquery_desc'] = '';
+$_lang['setting_themebootstrap_use_jquery_desc'] = 'Подключает jQuery 4.0.0. Плагины под jQuery 3.x могут потребовать jQuery Migrate.';

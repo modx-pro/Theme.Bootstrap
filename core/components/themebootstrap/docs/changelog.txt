@@ -1,5 +1,14 @@
 Changelog for Theme.Bootstrap
 
+4.1.0 (15.07.2026)
+=============
+- Added chunks for quick site setup: Scripts, Meta, Menu.*, Crumbs.*, Content.List, Tpl.Card, Page.*
+- Extracted menu and breadcrumb templates from Navbar and Crumbs
+- Moved JS includes into Scripts chunk
+- Updated jQuery to version 4.0.0 (breaking for some 3.x plugins; see setting description)
+- Fixed crumbs outputSeparator, Meta escaping, navbar brand link, html lang
+- Note: with BUILD_CHUNK_UPDATE=false, overwrite Head/Navbar/Footer/Crumbs on upgrade if needed
+
 4.0.1 (16.02.2026)
 =============
 - Updated Bootstrap to version 5.3.8
